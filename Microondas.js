@@ -12,7 +12,7 @@ let Brigadeiro = 8;
 
 //  Função Microondas
 function microondas(opcao, tempo) {
-    // Usando switch para vericar a comida e o tempo
+    //O switch vamos vericar as opções e o tempo
     switch(opcao) {
         case "Pipoca" :
             if (tempo < 10) // Limitando meu tempo menor do que 10 segundos
@@ -22,7 +22,7 @@ function microondas(opcao, tempo) {
             else if (tempo >= 20 && tempo <= 29) // Limitando tempo ente 20 e 29 segundos
             return `A comida(${opcao}) queimou!`
             else 
-            return `Kabummm` // Toda excessão de tempo superior ao pedido acima
+            return `Kabummm` // Se o tempo for 3x maior que o necessário para o prato, o microondas deve exibir a mensagem: “kabumm”
 
             break;
             case "Macarrao" :
@@ -33,7 +33,7 @@ function microondas(opcao, tempo) {
                 else if (tempo >= 16 && tempo <= 23) // Limitando tempo entre 16 e 23 segundos
                 return `A comida queimou!` ;
                 else 
-                return `Kabummm` // Toda excessão de tempo superior ao pedido acima
+                return `Kabummm` // Se o tempo for 3x maior que o necessário para o prato, o microondas deve exibir a mensagem: “kabumm”
             break;
             case "Carne" :
                 if (tempo < 15) // Limitando tempo menor do que 15 segundos
@@ -43,7 +43,7 @@ function microondas(opcao, tempo) {
                 else if (tempo >= 30 && tempo <= 44) // Limitando tempo ente 30 e 44 segundos
                 return `A comida(${opcao}) queimou!`;
                 else 
-                return `Kabummm` // Toda excessão de tempo superior ao pedido acima
+                return `Kabummm` // Se o tempo for 3x maior que o necessário para o prato, o microondas deve exibir a mensagem: “kabumm”
             break;
             case "Feijao" :
                 if (tempo < 12) // Limitando tempo menor do que 12 segundos
@@ -53,7 +53,7 @@ function microondas(opcao, tempo) {
                 else if (tempo >= 24 && tempo <= 35) // Limitando meu tempo ente 24 e 35 segundos
                 return `A comida(${opcao}) queimou!`;
                 else 
-                return `Kabummm` // Toda excessão de tempo superior ao pedido acima
+                return `Kabummm` // Se o tempo for 3x maior que o necessário para o prato, o microondas deve exibir a mensagem: “kabumm”
             break;
             case "Brigadeiro" :
                 if (tempo < 8) // Limitando tempo menor do que 10 segundos
@@ -63,10 +63,10 @@ function microondas(opcao, tempo) {
                 else if (tempo >= 16 && tempo <= 23) // Limitando tempo ente 20 e 29 segundos
                 return `A comida(${comidas}) queimou!`;
                 else 
-                return `Kabummm` // Toda excessão de tempo superior ao pedido acima
+                return `Kabummm` // Se o tempo for 3x maior que o necessário para o prato, o microondas deve exibir a mensagem: “kabumm”
             break;
             default:
-                return `Prato inexistente!` // Qualquer prato que não esteja listado no switch !
+                return `Prato inexistente!` // Qualquer prato que não esteja listado no switch
         }
     } 
     // Opção de comida
