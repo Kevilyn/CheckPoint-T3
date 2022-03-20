@@ -6,6 +6,7 @@ let Brigadeiro = 8;
 
 //  Função Microondas
 function microondas(opcao, tempo) {
+        //O switch vamos vericar as opções e o tempo
     switch(opcao) {
         case "Pipoca" :
             if(tempo >= Pipoca * 2 && tempo < Pipoca * 3){          // Se o tempo informado for maior que 2x o necessário, exibir mensagem que a comida queimou.
