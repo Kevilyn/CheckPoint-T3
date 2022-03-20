@@ -11,7 +11,7 @@ function microondas(opcao, tempo) {
         case "Pipoca" :
             if (tempo < 10) // Limitando meu tempo menor do que 10 segundos; Se o tempo for menor que o padrão, exibir a mensagem: "tempo insuficiente"
            return `Tempo insuficiente!`;
-            else if (tempo = 10) // Limitando tempo entre 10 e 19 segundos
+            else if (tempo >= 10 && tempo <= 19) // Limitando tempo entre 10 e 19 segundos
             return `${opcao} pronto(a), bom apetite`;
             else if (tempo >= 20 && tempo <= 29) // Limitando tempo ente 20 e 29 segundos
             return `A comida(${opcao}) queimou!`
