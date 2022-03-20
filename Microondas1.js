@@ -88,7 +88,7 @@ function microondas(opcao, tempo) {
             
             break;
         default :
-            console.log("Prato inexistente!");  // Opções não listadas no menu, devem exibir uma mensagem de erro: "Prato inexistente"
+            console.log("Prato inexistente!");                     // Opções não listadas no menu, devem exibir uma mensagem de erro: "Prato inexistente"
     }
 }
 
@@ -96,7 +96,7 @@ function microondas(opcao, tempo) {
 
 
     // Opção de comida
-        microondas("Pipoca",15);
+        microondas("Pipoca",10);
         microondas("Macarrao",7);
         microondas("Carne",45);
         microondas("Feijao",30);
